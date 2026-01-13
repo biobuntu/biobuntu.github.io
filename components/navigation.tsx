@@ -10,7 +10,7 @@ export function Navigation() {
 
   const links = [
     { href: "/", label: "Home" },
-    { href: "#features", label: "Features" },
+    { href: "/#features", label: "Features" },
     { href: "/docs", label: "Documentation" },
     { href: "/community", label: "Community" },
   ]
