@@ -41,7 +41,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://github.com/GenomeHouse/biobuntu/issues"
+                  href="https://github.com/biobuntu/biobuntu/issues"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
@@ -51,7 +51,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/GenomeHouse/biobuntu"
+                  href="https://github.com/biobuntu/biobuntu"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
@@ -61,7 +61,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:info@genomehouse.com"
+                  href="mailto:info@biobuntu.com"
                   className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                 >
                   Contact <Mail size={14} />
@@ -98,10 +98,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border pt-8 flex justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; 2026 GenomeHouse. MIT Licensed.</p>
+          <p>&copy; 2026 BioBuntu. MIT Licensed.</p>
           <div className="flex gap-4">
             <a
-              href="https://github.com/GenomeHouse/biobuntu"
+              href="https://github.com/biobuntu/biobuntu"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -110,7 +110,7 @@ export function Footer() {
               <Github size={18} />
             </a>
             <a
-              href="https://www.linkedin.com/company/genomehouse"
+              href="https://www.linkedin.com/company/biobuntu"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -119,7 +119,7 @@ export function Footer() {
               <Linkedin size={18} />
             </a>
             <a
-              href="https://www.facebook.com/genomehouse"
+              href="https://www.facebook.com/biobuntu"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -128,7 +128,7 @@ export function Footer() {
               <Facebook size={18} />
             </a>
             <a
-              href="https://www.instagram.com/genomehouse"
+              href="https://www.instagram.com/biobuntu"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -136,7 +136,7 @@ export function Footer() {
             >
               <Instagram size={18} />
             </a>
-            <a href="mailto:info@genomehouse.com" className="hover:text-primary transition-colors" aria-label="Email">
+            <a href="mailto:info@biobuntu.com" className="hover:text-primary transition-colors" aria-label="Email">
               <Mail size={18} />
             </a>
           </div>

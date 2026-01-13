@@ -32,7 +32,7 @@ export default function Home() {
                 Get Started <ArrowRight size={18} />
               </a>
               <a
-                href="https://github.com/GenomeHouse/biobuntu"
+                href="https://github.com/biobuntu/biobuntu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-secondary transition-colors"
@@ -135,7 +135,7 @@ export default function Home() {
               },
               {
                 title: "From Source",
-                command: "git clone https://github.com/GenomeHouse/biobuntu.git\ncd biobuntu\npip install -e .",
+                command: "git clone https://github.com/biobuntu/biobuntu.git\ncd biobuntu\npip install -e .",
                 description: "Build and install from source code",
               },
               {
@@ -145,7 +145,7 @@ export default function Home() {
               },
               {
                 title: "Conda",
-                command: "conda install -c genomehouse biobuntu",
+                command: "conda install -c biobuntu biobuntu",
                 description: "Install via conda package manager",
               },
             ].map((method, index) => (

@@ -34,7 +34,7 @@ export function Navigation() {
 
           <div className="hidden md:flex gap-4">
             <a
-              href="https://github.com/GenomeHouse/biobuntu"
+              href="https://github.com/biobuntu/biobuntu"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 text-foreground hover:bg-secondary rounded-lg transition-colors"
@@ -72,7 +72,7 @@ export function Navigation() {
             ))}
             <div className="flex gap-2 pt-2">
               <a
-                href="https://github.com/GenomeHouse/biobuntu"
+                href="https://github.com/biobuntu/biobuntu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 px-4 py-2 text-center text-foreground hover:bg-secondary rounded-lg transition-colors"

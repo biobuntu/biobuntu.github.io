@@ -19,21 +19,21 @@ export default function CommunityPage() {
               icon: Github,
               title: "GitHub Repository",
               description: "Browse the source code, report issues, and contribute",
-              link: "https://github.com/GenomeHouse/biobuntu",
+              link: "https://github.com/biobuntu/biobuntu",
               linkText: "Visit GitHub",
             },
             {
               icon: MessageSquare,
               title: "Issue Tracking",
               description: "Report bugs, request features, and discuss improvements",
-              link: "https://github.com/GenomeHouse/biobuntu/issues",
+              link: "https://github.com/biobuntu/biobuntu/issues",
               linkText: "View Issues",
             },
             {
               icon: Users,
               title: "Discussions",
               description: "Join conversations with other researchers and developers",
-              link: "https://github.com/GenomeHouse/biobuntu/discussions",
+              link: "https://github.com/biobuntu/biobuntu/discussions",
               linkText: "Start Discussing",
             },
             {
@@ -99,8 +99,8 @@ export default function CommunityPage() {
             <h3 className="font-semibold text-lg text-foreground mb-2">Report Security Issues</h3>
             <p className="text-sm text-muted-foreground">
               Found a security vulnerability? Please email{" "}
-              <a href="mailto:info@genomehouse.com" className="text-primary hover:underline">
-                info@genomehouse.com
+              <a href="mailto:mubashirali1837@gmail.com" className="text-primary hover:underline">
+                info@biobuntu.com
               </a>{" "}
               instead of using the issue tracker.
             </p>
@@ -112,19 +112,19 @@ export default function CommunityPage() {
           <div className="space-y-4">
             <div className="flex gap-4">
               <div className="font-semibold text-foreground min-w-[100px]">Email:</div>
-              <a href="mailto:info@genomehouse.com" className="text-primary hover:underline">
-                info@genomehouse.com
+              <a href="mailto:mubashirali1837@gmail.com" className="text-primary hover:underline">
+                info@biobuntu.com
               </a>
             </div>
             <div className="flex gap-4">
               <div className="font-semibold text-foreground min-w-[100px]">GitHub:</div>
               <a
-                href="https://github.com/GenomeHouse/biobuntu"
+                href="https://github.com/biobuntu/biobuntu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
-                github.com/GenomeHouse/biobuntu
+                github.com/biobuntu/biobuntu
               </a>
             </div>
             <div className="flex gap-4">
