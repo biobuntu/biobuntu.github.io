@@ -13,7 +13,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-block mb-4 px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
-              v0.1.0 - Open Source
+              v1.2.4 - Open Source
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-balance leading-tight text-foreground mb-6">
               Bioinformatics Made Simple
