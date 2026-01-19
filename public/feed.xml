@@ -19,7 +19,7 @@
     <id>urn:uuid:biobuntu:entry:1.5.0</id>
     <published>2026-01-19T00:00:00Z</published>
     <updated>2026-01-19T00:00:00Z</updated>
-    <link href="https://biobuntu.github.io/release-notes#v1.5.0"/>
+    <link href="https://biobuntu.github.io/"/>
     <author>
       <name>Mubashir Ali</name>
     </author>
@@ -35,7 +35,7 @@
           <li>Better error handling</li>
           <li>Updated documentation</li>
         </ul>
-        <p>Download now from the <a href="https://marketplace.visualstudio.com/items?itemName=Mubashir-Ali.bio-data-hub">VS Code Marketplace</a>.</p>
+        <p>Download now from the <a href="https://pypi.org/project/biobuntu/">PyPI</a>.</p>
       </div>
     </content>
   </entry>
