@@ -19,13 +19,19 @@ const jsonLd = {
         "contactType": "technical support",
       },
       "keywords": ["BioBuntu", "bioinformatics", "software development", "education", "programming"],
-      "knowsAbout": ["bioinformatics", "data science", "machine learning", "computational biology", "software development", "education"],
+      "knowsAbout": ["bioinformatics", "PyPI", "data science", "machine learning", "computational biology", "software development", "education"],
       "sameAs": [
         "https://codewithbismillah.online",
         "https://mubashirali.vercel.app",
+        "https://www.producthunt.com/products/biobuntu",
+        "https://pypi.org/project/biobuntu/",
+        "https://libraries.io/pypi/biobuntu",
+        "https://www.piwheels.org/project/biobuntu/",
+        "https://data.safetycli.com/packages/pypi/biobuntu/",
         "https://www.producthunt.com/products/bio-data-hub-vsce",
-        "https://www.linkedin.com/company/code-with-bismiallah/",
+        "https://www.linkedin.com/company/biobuntu/",
         "https://github.com/Code-with-Bismillah",
+        "https://github.com/Code-with-Bismillah/biobuntu",
         "https://www.youtube.com/@CodeWithBismillah",
         "https://www.facebook.com/codewithbismillah.online",
         "https://x.com/CWB_Online",
@@ -157,7 +163,7 @@ const jsonLd = {
           "https://www.amazon.com/author/mubashiali",
           "https://www.linkedin.com/posts/mubashirali3_datascience-python-machinelearning-activity-7392497411283214336-DocU",
           "https://www.linkedin.com/feed/update/urn:li:groupPost:926817-7390462225473409024",
-          "https://www.linkedin.com/posts/mubashirali3_biodatahub-bioinformatics-datascience-activity-7391551376864116737-cZ-w",
+          "https://www.linkedin.com/posts/mubashirali3_BioBuntu-bioinformatics-datascience-activity-7391551376864116737-cZ-w",
           "https://www.linkedin.com/posts/mubashirali3_bioinformatics-genomics-bigdata-activity-7390654575751557120-rseJ",
           "https://www.linkedin.com/posts/mubashirali3_bioinformatics-genomics-bigdata-activity-7390431518134927360-uzAQ",
           "https://lnkd.in/dBwXPTDF",
@@ -171,7 +177,7 @@ const jsonLd = {
     },
     {
       "@type": "SoftwareApplication",
-      name: "BioDataHub",
+      name: "BioBuntu",
       alternateName: ["Biobuntu", "biobuntu", "biobuntu"],
       url: "https://biobuntu.github.io",
       description: "VS Code extension for bioinformatics data analysis and visualization",
@@ -187,73 +193,39 @@ const jsonLd = {
         "@type": "Person",
         name: "Mubashir Ali",
       },
-      downloadUrl: "https://marketplace.visualstudio.com/items?itemName=Mubashir-Ali.bio-data-hub",
+      downloadUrl: "https://pypi.org/project/biobuntu/",
       applicationSubCategory: "Bioinformatics",
       keywords: [
-        "big data",
+        "biobuntu",
         "bioinformatics",
         "bioinformatics tools",
-        "biological data",
-        "biostatistics",
-        "biotechnology",
-        "clinical data",
-        "computational biology",
-        "csv",
-        "csv viewer",
-        "data analysis",
-        "data analytics",
-        "data cleaning",
-        "data exploration",
-        "data management",
-        "data mining",
-        "data processing",
-        "data science",
-        "data transformation",
-        "data visualization",
-        "dna analysis",
-        "genetic analysis",
-        "genetics",
-        "genome sequencing",
         "genomics",
-        "health informatics",
-        "keybindings",
-        "life sciences",
-        "machine learning",
-        "metadata",
-        "metagenomics",
-        "NGS analysis",
-        "omics",
-        "PCA & Clustering",
-        "previewCSV",
-        "proteomics",
-        "research tool",
-        "rna sequencing",
-        "scientific computing",
-        "vsce"
+        "ubuntu",
+        "PyPI package",
       ],
-      applicationSuite: "BioDataHub Suite",
+      applicationSuite: "BioBuntu Suite",
       availableOnDevice: "desktop",
       countriesNotSupported: "North Korea, Iran",
       countriesSupported: "Worldwide",
-      featureList: "Data discovery, Dataset management, Data analysis, Visualization, PCA, Clustering, Metadata generation",
+      featureList: "Project Management, Advanced Pipelines, Multiple Interface, Remote Lab Support, Packaging, Workflow Support, Tool Integration",
       fileSize: "50MB",
-      installUrl: "https://marketplace.visualstudio.com/items?itemName=Mubashir-Ali.bio-data-hub",
+      installUrl: "https://pypi.org/project/biobuntu/",
       memoryRequirements: "4GB RAM",
       permissions: "Read and write access to files",
       processorRequirements: "Intel i5 or equivalent",
-      releaseNotes: "https://biobuntu.github.io/release-notes",
-      runtimePlatform: "Node.js",
+      releaseNotes: "https://biobuntu.github.io/",
+      runtimePlatform: "MacOS, Windows, Linux",
       screenshot: "https://biobuntu.github.io/screenshot.png",
       softwareAddOn: {
         "@type": "SoftwareApplication",
-        name: "BioDataHub Pro",
-        description: "Premium features for BioDataHub.",
-        url: "https://biobuntu.github.io/pro",
-        softwareVersion: "1.5.0",
+        name: "BioBuntu Pro",
+        description: "Premium features for BioBuntu.",
+        url: "https://biobuntu.github.io/",
+        softwareVersion: "1.2.4",
       },
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "4.8",
+        ratingValue: "4.9",
         ratingCount: "100",
         bestRating: "5",
         worstRating: "1",
@@ -271,11 +243,11 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      name: "BioDataHub",
-      alternateName: ["Bio-Data-Hub", "BioDataHub", "Bio Data Hub", "Bio Data Hub VSCE"],
+      name: "BioBuntu",
+      alternateName: ["Bio-Data-Hub", "BioBuntu", "biobuntu", "biobuntu ⋅ PyPI"],
       url: "https://biobuntu.github.io",
-      description: "VS Code extension for bioinformatics data analysis and visualization",
-      keywords: ["BioDataHub", "bioinformatics", "VS Code extension", "data analysis", "data visualization", "PCA", "clustering", "genomics", "proteomics"],
+      description: "A comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams.",
+      keywords: ["BioBuntu", "bioinformatics", "PyPI Package", "data analysis"],
       inLanguage: "en-US",
       potentialAction: {
         "@type": "SearchAction",
@@ -302,7 +274,7 @@ const jsonLd = {
     },
     {
       "@type": "ScholarlyArticle",
-      "name": "BioDataHub: An Integrated VS Code Extension for Streamlined Bioinformatics Dataset Analysis and Visualization",
+      "name": "BioBuntu: An Integrated VS Code Extension for Streamlined Bioinformatics Dataset Analysis and Visualization",
       "url": "https://www.researchsquare.com/article/rs-7861003/v1",
       "sameAs": "https://doi.org/10.21203/rs.3.rs-7861003/v1",
       "author": {
@@ -315,66 +287,50 @@ const jsonLd = {
         "name": "Code with Bismillah"
       },
       "datePublished": "2025-01-01",
-      "description": "BioDataHub is a powerful VS Code extension designed for bioinformatics professionals and data scientists. It simplifies the exploration, visualization, and management of CSV datasets, enabling users to analyze biological data efficiently.",
-      "keywords": ["BioDataHub", "bioinformatics", "VS Code extension", "data analysis", "PCA", "clustering"]
+      "description": "BioBuntu is a comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams.",
+      "keywords": ["BioBuntu", "bioinformatics", "PyPI", "Ubuntu"]
     },
     {
       "@type": "FAQPage",
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is BioDataHub?",
+          name: "What is BioBuntu?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BioDataHub is a powerful VS Code extension designed for bioinformatics professionals to explore, visualize, and manage CSV datasets efficiently.",
+            text: "BioBuntu is a comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams.",
           },
         },
         {
           "@type": "Question",
-          name: "How do I install BioDataHub?",
+          name: "How do I install BioBuntu?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can install BioDataHub from the Visual Studio Marketplace by searching for 'Bio-Data-Hub' or using the command 'ext install Mubashir-Ali.bio-data-hub' in VS Code.",
+            text: "You can install BioBuntu from the PyPI by searching for 'BioBuntu' or using the command 'pip install biobuntu' in CMD",
           },
         },
         {
           "@type": "Question",
-          name: "What features does BioDataHub offer?",
+          name: "What features does BioBuntu offer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BioDataHub offers dataset search, CSV preview, metadata generation, data visualization, PCA analysis, K-means clustering, and data export functionalities.",
+            text: "Project Management: Create and manage bioinformatics projects with organized directory structures, Advanced Pipelines: Support for complex workflows with dependencies and parallel execution, Multiple Interfaces: CLI, Desktop GUI (BioBuntu Studio), and Web Dashboard, Remote Lab Support: API endpoints for remote pipeline execution with job tracking, Packaging: Available as .deb packages, PPA, and Conda packages, Workflow Support: RNA-seq, variant calling, metagenomics, and QC pipelines, Tool Integration: Wrappers for FastQC, BWA, GATK, HISAT2, Samtools",
           },
         },
         {
           "@type": "Question",
-          name: "What are the system requirements for BioDataHub?",
+          name: "What are the system requirements for BioBuntu?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BioDataHub requires VS Code 1.70.0 or higher, Node.js 14.x or higher, 4GB RAM, and 200MB available storage. It supports Windows, macOS, and Linux.",
+            text: "BioBuntu is platform independent. It supports Windows, macOS, and Linux.",
           },
         },
         {
           "@type": "Question",
-          name: "How do I update BioDataHub?",
+          name: "How do I update BioBuntu?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "BioDataHub updates automatically through VS Code. You can also manually update by going to Extensions → Bio-Data-Hub → Update. Check the changelog for new features.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can BioDataHub handle large datasets?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, BioDataHub is designed to handle large bioinformatics datasets efficiently. It includes performance optimizations for data processing and visualization.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is BioDataHub compatible with other bioinformatics tools?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BioDataHub integrates well with popular bioinformatics tools and can export data in various formats compatible with other analysis software.",
+            text: "BioBuntu updates  by pip install biobuntu==1.2.4 --upgrade in CMD",
           },
         },
         {
@@ -382,15 +338,15 @@ const jsonLd = {
           name: "How do I report bugs or request features?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Report bugs or request features through GitHub Issues at https://github.com/mubashir1837/BioDataHub/issues. Include detailed steps to reproduce any issues.",
+            text: "Report bugs or request features through GitHub Issues at https://github.com/biobuntu/biobuntu/issues. Include detailed steps to reproduce any issues.",
           },
         },
       ],
     },
     {
       "@type": "VideoObject",
-      name: "BioDataHub - Bioinformatics Data Analysis in VS Code",
-      description: "Learn how to use BioDataHub for efficient bioinformatics data analysis and visualization in Visual Studio Code.",
+      name: "BioBuntu - Bioinformatics Platform Tutorial",
+      description: "A comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams.",
       thumbnailUrl: "https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg",
       uploadDate: "2025-03-22",
       duration: "PT10M",
@@ -421,7 +377,7 @@ export const metadata: Metadata = {
     "Bio-Data-Hub",
     "Bio Data Hub",
     "Bio Data Hub VSCE",
-    "BioDataHub",
+    "BioBuntu",
     "VS Code extension",
     "bioinformatics",
     "data analysis",
@@ -488,16 +444,16 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "BioDataHub - Streamlined Bioinformatics Analysis in VS Code",
+    title: "BioBuntu - Streamlined Bioinformatics Analysis in VS Code",
     description: "Discover, visualize, and analyze bioinformatics datasets directly in VS Code. Features PCA, clustering, metadata generation, and more for researchers.",
     url: "https://biobuntu.github.io",
-    siteName: "BioDataHub",
+    siteName: "BioBuntu",
     images: [
       {
         url: "/images/logo.png",
         width: 800,
         height: 600,
-        alt: "BioDataHub Logo",
+        alt: "BioBuntu Logo",
       },
     ],
     locale: "en_US",
@@ -557,7 +513,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="news_keywords" content="BioDataHub, bioinformatics, VS Code extension, data analysis, visualization, PCA, clustering, genomics, proteomics, updates, new releases, machine learning, life sciences, computational biology, NGS analysis, RNA sequencing, DNA analysis, metagenomics, biostatistics, biotechnology" />
+        <meta name="news_keywords" content="BioBuntu, bioinformatics, PyPI Package, data analysis, visualization, PCA, clustering, genomics, proteomics, updates, new releases, machine learning, life sciences, computational biology, NGS analysis, RNA sequencing, DNA analysis, metagenomics, biostatistics, biotechnology" />
         <meta name="category" content="Programming Languages, Data Science, Machine Learning, Visualization, Bioinformatics, Education, Research Tools" />
         <link rel="canonical" href="https://biobuntu.github.io" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
@@ -597,10 +553,10 @@ export default function RootLayout({
           }}
         />
         {/* Dublin Core Metadata */}
-        <meta name="DC.title" content="BioDataHub - VS Code Extension for Bioinformatics" />
+        <meta name="DC.title" content="BioBuntu - Bioinformatics platform" />
         <meta name="DC.creator" content="Mubashir Ali" />
-        <meta name="DC.subject" content="Bioinformatics, Data Analysis, VS Code Extension" />
-        <meta name="DC.description" content="Ultimate VS Code extension for bioinformatics data analysis and visualization" />
+        <meta name="DC.subject" content="Bioinformatics, Data Analysis, PyPi" />
+        <meta name="DC.description" content="A comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams." />
         <meta name="DC.publisher" content="Code with Bismillah" />
         <meta name="DC.language" content="en" />
         <meta name="DC.rights" content="© 2026 Mubashir Ali" />
@@ -618,7 +574,7 @@ export default function RootLayout({
         />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-        <link rel="dns-prefetch" href="//marketplace.visualstudio.com" />
+        <link rel="dns-prefetch" href="//pypi.org/" />
         <link rel="dns-prefetch" href="//github.com" />
         <link rel="dns-prefetch" href="//www.researchsquare.com" />
         <link rel="dns-prefetch" href="//www.youtube.com" />
