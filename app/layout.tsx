@@ -505,8 +505,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BioDataHub - Bioinformatics Data Analysis Extension",
-    description: "Ultimate VS Code extension for bioinformatics: dataset discovery, visualization, PCA, clustering, and metadata generation.",
+    title: "BioBuntu - Bioinformatics Platform",
+    description: "A comprehensive bioinformatics platform with CLI, GUI, and web interfaces for running advanced genomic pipelines",
     images: ["/images/logo.png"],
     creator: "@mubashir1837",
     site: "@mubashir1837",
