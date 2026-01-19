@@ -1,7 +1,7 @@
 {
-  "name": "BioDataHub - Bioinformatics VS Code Extension",
-  "short_name": "BioDataHub",
-  "description": "Ultimate VS Code extension for bioinformatics data analysis, visualization, PCA, clustering, and metadata generation",
+  "name": "BioBuntu - Bioinformatics Platform",
+  "short_name": "BioBuntu",
+  "description": "A comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams.",
   "start_url": "https://biobuntu.github.io",
   "scope": "/",
   "display": "standalone",
