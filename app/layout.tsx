@@ -460,7 +460,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="news_keywords" content="BioBuntu, bioinformatics, PyPI Package, data analysis, visualization, PCA, clustering, genomics, proteomics, updates, new releases, machine learning, life sciences, computational biology, NGS analysis, RNA sequencing, DNA analysis, metagenomics, biostatistics, biotechnology" />
-        <meta name="category" content="Programming Languages, Data Science, Machine Learning, Visualization, Bioinformatics, Education, Research Tools" />
+        <meta name="category" content="Programming Languages, PyPI, Python,  Bioinformatics, Education, Research Tools" />
         <link rel="canonical" href="https://biobuntu.github.io" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <link rel="author" href="https://mubashirali.vercel.app" />
@@ -476,9 +476,9 @@ export default function RootLayout({
         {/* Bing Webmaster Tools Verification */}
         <meta name="msvalidate.01" content="8AB258D32A8DBA9AE06B36DB23B4D338" />
         {/* Yandex Verification */}
-        <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE_HERE" />
+        <meta name="yandex-verification" content="YANDEX_VERIFICATION_CODE_HERE" />
         {/* Facebook App ID (if applicable) */}
-        <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID_HERE" />
+        <meta property="fb:app_id" content="FACEBOOK_APP_ID_HERE" />
         {/* Additional Meta Tags */}
         <meta name="author" content="Mubashir Ali" />
         <meta name="publisher" content="Code with Bismillah" />
@@ -514,7 +514,7 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-BHP7FTR79Y');
+              gtag('config', 'G-BHP7FT');
             `,
           }}
         />
