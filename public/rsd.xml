@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+  <service>
+    <engineName>BioDataHub</engineName>
+    <engineHomepageUrl>https://biobuntu.github.io</engineHomepageUrl>
+    <homePageUrl>https://biobuntu.github.io</homePageUrl>
+    <apis>
+      <api name="MetaWeblog" blogID="1" preferred="true" apiLink="https://biobuntu.github.io/api/rsd"/>
+      <api name="Blogger" blogID="1" preferred="false" apiLink="https://www.blogger.com/api/rsd"/>
+      <api name="WordPress.com" blogID="" preferred="false" apiLink="https://wordpress.com/xmlrpc?rsd"/>
+    </apis>
+  </service>
+</rsd>

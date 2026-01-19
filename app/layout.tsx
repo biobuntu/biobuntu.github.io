@@ -172,7 +172,7 @@ const jsonLd = {
     {
       "@type": "SoftwareApplication",
       name: "BioDataHub",
-      alternateName: ["Bio-Data-Hub", "Bio Data Hub", "Bio Data Hub VSCE"],
+      alternateName: ["Biobuntu", "biobuntu", "biobuntu"],
       url: "https://biobuntu.github.io",
       description: "VS Code extension for bioinformatics data analysis and visualization",
       operatingSystem: "Windows, macOS, Linux",
@@ -259,10 +259,14 @@ const jsonLd = {
         worstRating: "1",
       },
       sameAs: [
-        "https://github.com/mubashir1837/BioDataHub",
-        "https://marketplace.visualstudio.com/items?itemName=Mubashir-Ali.bio-data-hub",
-        "https://www.producthunt.com/products/bio-data-hub-vsce",
-        "https://www.linkedin.com/showcase/bio-data-hub-vsce/"
+        "https://github.com/biobuntu/biobuntu",
+        "https://pypi.org/project/biobuntu/",
+        "https://libraries.io/pypi/biobuntu",
+        "https://www.piwheels.org/project/biobuntu/",
+        "https://data.safetycli.com/packages/pypi/biobuntu/",
+        "https://www.producthunt.com/products/biobuntu",
+        "https://www.linkedin.com/company/biobuntu",
+        "https://data.safetycli.com/packages/pypi/biobuntu/changelog"
       ],
     },
     {

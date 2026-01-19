@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>BioDataHub - Bioinformatics VS Code Extension</title>
+  <subtitle>Updates and news from BioDataHub</subtitle>
+  <link href="https://biobuntu.github.io"/>
+  <link href="https://biobuntu.github.io/feed.xml" rel="self"/>
+  <id>urn:uuid:biobuntu:feed</id>
+  <updated>2026-01-19T00:00:00Z</updated>
+  <author>
+    <name>Mubashir Ali</name>
+    <email>mubashirali1837@gmail.com</email>
+    <uri>https://mubashirali.vercel.app</uri>
+  </author>
+  <rights>Copyright © 2026 Mubashir Ali. All rights reserved.</rights>
+  <generator uri="https://biobuntu.github.io" version="1.5.0">BioDataHub</generator>
+
+  <entry>
+    <title>BioDataHub 1.5.0 Released</title>
+    <id>urn:uuid:biobuntu:entry:1.5.0</id>
+    <published>2026-01-19T00:00:00Z</published>
+    <updated>2026-01-19T00:00:00Z</updated>
+    <link href="https://biobuntu.github.io/release-notes#v1.5.0"/>
+    <author>
+      <name>Mubashir Ali</name>
+    </author>
+    <category term="release"/>
+    <summary>Latest version of BioDataHub with enhanced features and performance improvements.</summary>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>BioDataHub 1.5.0 is now available with:</p>
+        <ul>
+          <li>Improved performance for large datasets</li>
+          <li>New visualization types</li>
+          <li>Enhanced clustering algorithms</li>
+          <li>Better error handling</li>
+          <li>Updated documentation</li>
+        </ul>
+        <p>Download now from the <a href="https://marketplace.visualstudio.com/items?itemName=Mubashir-Ali.bio-data-hub">VS Code Marketplace</a>.</p>
+      </div>
+    </content>
+  </entry>
+
+  <entry>
+    <title>New Documentation Site Launched</title>
+    <id>urn:uuid:biobuntu:entry:docs</id>
+    <published>2026-01-15T00:00:00Z</published>
+    <updated>2026-01-15T00:00:00Z</updated>
+    <link href="https://biobuntu.github.io/docs"/>
+    <author>
+      <name>Mubashir Ali</name>
+    </author>
+    <category term="announcement"/>
+    <summary>Comprehensive documentation for BioDataHub is now available.</summary>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>We've launched a complete documentation site with tutorials, guides, and API references. Visit <a href="https://biobuntu.github.io/docs">docs</a> to get started.</p>
+      </div>
+    </content>
+  </entry>
+</feed>
