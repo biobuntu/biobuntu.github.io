@@ -2,6 +2,19 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ArrowRight, Code2, Zap, GitBranch, BarChart3, Cpu, BookOpen } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "BioBuntu - Open-Source Bioinformatics Platform | Genomic Analysis Made Simple",
+  description: "Discover BioBuntu: comprehensive bioinformatics platform for genomic analysis with CLI, GUI, and web interfaces. Run advanced pipelines for RNA-seq, variant calling, and metagenomics.",
+  keywords: ["bioinformatics", "genomic analysis", "bioinformatics platform", "data visualization", "open source", "PyPI"],
+  openGraph: {
+    title: "BioBuntu - Genomic Analysis Platform",
+    description: "Open-source bioinformatics platform for genomic analysis with multiple interfaces",
+    url: "https://biobuntu.github.io",
+    type: "website",
+  },
+}
 
 export default function Home() {
   return (

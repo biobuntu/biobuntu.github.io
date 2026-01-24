@@ -1,6 +1,19 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Code2, Terminal, Globe, Zap } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "BioBuntu Documentation - Complete Guides & API Reference",
+  description: "Explore BioBuntu documentation: CLI reference, GUI tutorials, web dashboard guides, and API documentation for bioinformatics pipeline development.",
+  keywords: ["documentation", "bioinformatics", "CLI guide", "API reference", "tutorials"],
+  openGraph: {
+    title: "BioBuntu Documentation",
+    description: "Complete guides and API reference for BioBuntu",
+    url: "https://biobuntu.github.io/docs",
+    type: "website",
+  },
+}
 
 export default function DocsPage() {
   return (

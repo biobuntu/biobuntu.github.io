@@ -1,8 +1,16 @@
 import React from 'react';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'FAQ - BioBuntu',
-  description: 'Frequently Asked Questions about BioBuntu, a VS Code extension for bioinformatics data analysis.',
+export const metadata: Metadata = {
+  title: 'FAQ - BioBuntu | Frequently Asked Questions',
+  description: 'Find answers to frequently asked questions about BioBuntu: installation, features, system requirements, updates, and troubleshooting for bioinformatics analysis.',
+  keywords: ["FAQ", "bioinformatics", "installation", "features", "troubleshooting", "help"],
+  openGraph: {
+    title: "BioBuntu FAQ - Frequently Asked Questions",
+    description: "Get answers to common questions about BioBuntu bioinformatics platform",
+    url: "https://biobuntu.github.io/faq",
+    type: "website",
+  },
 };
 
 export default function FAQPage() {

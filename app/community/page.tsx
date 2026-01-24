@@ -1,6 +1,19 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Github, MessageSquare, Users, Lightbulb, ExternalLink, BookOpen } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Community & Support - BioBuntu | Connect with Bioinformaticians",
+  description: "Join the BioBuntu community. Get support, contribute to the project, report issues, and connect with other bioinformaticians on GitHub, Discord, and social media.",
+  keywords: ["community", "support", "GitHub", "Discord", "bioinformatics community", "open source"],
+  openGraph: {
+    title: "BioBuntu Community & Support",
+    description: "Join the BioBuntu community for support, collaboration, and contributions",
+    url: "https://biobuntu.github.io/community",
+    type: "website",
+  },
+}
 
 export default function CommunityPage() {
   return (

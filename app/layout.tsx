@@ -370,36 +370,58 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
-  title: "BioBuntu - Bioinformatics Platform",
+  title: "BioBuntu - Open-Source Bioinformatics Platform for Genomic Analysis",
   description:
-    "A comprehensive bioinformatics platform with CLI, GUI, and web interfaces for running advanced genomic pipelines",
+    "BioBuntu is a comprehensive, open-source bioinformatics platform with CLI, GUI, and web interfaces for running advanced genomic analysis pipelines. Perfect for researchers, labs, and bioinformatics teams. Install via PyPI.",
   keywords: [
     "BioBuntu",
-    "BioBuntu PyPI",
-    "biobuntu ⋅ PyPI",
-    "BioBuntu",
-    "PyPI Package",
     "bioinformatics",
-    "ubuntu"
+    "genomic analysis",
+    "data visualization",
+    "PyPI package",
+    "bioinformatics tools",
+    "RNA-seq analysis",
+    "variant calling",
+    "metagenomics",
+    "NGS analysis",
+    "computational biology",
+    "bioinformatics platform",
+    "open source bioinformatics",
+    "genome analysis software",
+    "bioinformatics pipeline",
+    "genomics visualization",
+    "DNA sequence analysis",
+    "proteomics data analysis"
   ],
-  authors: [{ name: "Mubashir Ali" }],
+  authors: [{ name: "Mubashir Ali", url: "https://mubashirali.vercel.app" }],
   creator: "Mubashir Ali",
   publisher: "Code with Bismillah",
+  category: "Bioinformatics, Research Tools, Software Development",
+  classification: "Bioinformatics",
+  metadataBase: new URL("https://biobuntu.github.io"),
   alternates: {
     canonical: "https://biobuntu.github.io",
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "BioBuntu - Streamlined Bioinformatics Analysis in VS Code",
-    description: "Discover, visualize, and analyze bioinformatics datasets directly in VS Code. Features PCA, clustering, metadata generation, and more for researchers.",
+    title: "BioBuntu - Genomic Analysis and Data Visualization Platform",
+    description: "Open-source bioinformatics platform with CLI, GUI, and web interfaces. Discover, visualize, and analyze genomic datasets with PCA, clustering, metadata generation, and advanced pipelines.",
     url: "https://biobuntu.github.io",
     siteName: "BioBuntu",
     images: [
       {
         url: "/images/logo.png",
-        width: 800,
-        height: 600,
-        alt: "BioBuntu Logo",
+        width: 1200,
+        height: 630,
+        alt: "BioBuntu - Bioinformatics Platform Logo",
+        type: "image/png",
+      },
+      {
+        url: "/images/banner.png",
+        width: 1200,
+        height: 900,
+        alt: "BioBuntu Platform Interface",
+        type: "image/png",
       },
     ],
     locale: "en_US",
@@ -407,23 +429,30 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BioBuntu - Bioinformatics Platform",
-    description: "A comprehensive bioinformatics platform with CLI, GUI, and web interfaces for running advanced genomic pipelines",
-    images: ["/images/logo.png"],
+    title: "BioBuntu - Genomic Analysis Platform | Open Source",
+    description: "Open-source bioinformatics platform for genomic analysis with CLI, GUI, and web interfaces. Run advanced pipelines for RNA-seq, variant calling, and metagenomics analysis.",
+    images: ["/images/logo.png", "/images/banner.png"],
     creator: "@mubashir1837",
-    site: "@mubashir1837",
-    creatorId: "@mubashir1837",
-    siteId: "@mubashir1837",
+    site: "@CWB_Online",
+    creatorId: "mubashir1837",
+    siteId: "CWB_Online",
   },
   robots: {
     index: true,
     follow: true,
+    nocache: false,
+    noimageindex: false,
+    nositelinkssearchbox: false,
+    notranslate: false,
     googleBot: {
       index: true,
       follow: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
+      "noimageindex": false,
+      "noarchive": false,
+      "nocache": false,
     },
   },
   icons: {
@@ -443,10 +472,6 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-  other: {
-    "msapplication-TileColor": "#000000",
-    "msapplication-config": "/browserconfig.xml",
-  },
 }
 
 export default function RootLayout({
@@ -460,9 +485,13 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta name="news_keywords" content="BioBuntu, bioinformatics, PyPI Package, data analysis, visualization, PCA, clustering, genomics, proteomics, updates, new releases, machine learning, life sciences, computational biology, NGS analysis, RNA sequencing, DNA analysis, metagenomics, biostatistics, biotechnology" />
-        <meta name="category" content="Programming Languages, PyPI, Python,  Bioinformatics, Education, Research Tools" />
+        <meta name="category" content="Programming Languages, PyPI, Python, Bioinformatics, Education, Research Tools" />
+        <meta name="audience" content="Bioinformaticians, Researchers, Data Scientists, Software Developers" />
+        <meta name="subject" content="Bioinformatics, Genomic Analysis, Data Visualization, Computational Biology" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="canonical" href="https://biobuntu.github.io" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <link rel="author" href="https://mubashirali.vercel.app" />
         <link rel="me" href="https://linkedin.com/in/mubashirali3/" />
         <link rel="me" href="https://github.com/mubashir1837" />
@@ -471,6 +500,7 @@ export default function RootLayout({
         <link rel="privacy" href="/privacy.md" />
         <link rel="terms" href="/terms.md" />
         <link rel="help" href="/FAQ.md" />
+        <link rel="manifest" href="/manifest.json" />
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="GhJ96yf5IMVcGgy8dgYiIHlTQJxeE6UnaTe4xusCl1k" />
         {/* Bing Webmaster Tools Verification */}
@@ -485,7 +515,31 @@ export default function RootLayout({
         <meta name="copyright" content="© 2026 Mubashir Ali" />
         <meta name="language" content="en-US" />
         <meta name="geo.region" content="PK" />
-        
+        <meta name="ICBM" content="31.5204, 74.3587" />
+        <meta name="og:site_name" content="BioBuntu" />
+        <meta name="og:type" content="website" />
+        <meta name="og:locale" content="en_US" />
+        {/* Additional SEO Meta Tags */}
+        <meta name="description" content="BioBuntu is a comprehensive, open-source bioinformatics platform with CLI, GUI, and web interfaces for running advanced genomic analysis pipelines. Install via PyPI." />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="BioBuntu" />
+        {/* Additional Technical SEO */}
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="web-app-capable" content="yes" />
+        <meta name="x-ua-compatible" content="IE=edge,chrome=1" />
+        <meta name="format-detection" content="telephone=yes,email=yes,address=no" />
+        <meta name="color-scheme" content="light dark" />
+        {/* Open Search / XML Sitemap */}
+        <link rel="search" type="application/opensearchdescription+xml" title="BioBuntu Search" href="/opensearch.xml" />
+        {/* Robots.txt / Crawler Hints */}
+        <link rel="robots" href="/robots.txt" />
+        {/* Schema.org Breadcrumb Navigation */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 1,"name": "Home","item": "https://biobuntu.github.io"},{"@type": "ListItem","position": 2,"name": "Docs","item": "https://biobuntu.github.io/docs"},{"@type": "ListItem","position": 3,"name": "FAQ","item": "https://biobuntu.github.io/faq"},{"@type": "ListItem","position": 4,"name": "Community","item": "https://biobuntu.github.io/community"}]})}} />
+        {/* Local Business Schema (if applicable) */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context": "https://schema.org","@type": "LocalBusiness","name": "Code with Bismillah","url": "https://codewithbismillah.online","email": "mubashirali1837@gmail.com","areaServed": "Worldwide","priceRange": "Free","mainEntity": {"@type": "SoftwareApplication","name": "BioBuntu"}})}} />
+        {/* Product Schema Enhancement */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context": "https://schema.org","@type": "SoftwareApplication","name": "BioBuntu","alternateName": "Bio-Data-Hub","url": "https://biobuntu.github.io","image": "https://biobuntu.github.io/logo.png","description": "Open-source bioinformatics platform for genomic analysis with CLI, GUI, and web interfaces","applicationCategory": ["DeveloperApplication","MobileApplication"],"operatingSystem": "Windows, macOS, Linux","browserRequirements": "JavaScript enabled","downloadUrl": "https://pypi.org/project/biobuntu/","softwareVersion": "1.5.0","releaseDate": "2025-01-01","dateModified": "2026-01-24"})}} />
         {/* Microsoft Clarity */}
         <script
           dangerouslySetInnerHTML={{
@@ -506,6 +560,27 @@ export default function RootLayout({
         <meta name="DC.publisher" content="Code with Bismillah" />
         <meta name="DC.language" content="en" />
         <meta name="DC.rights" content="© 2026 Mubashir Ali" />
+        <meta name="DC.issued" content="2025-01-01" />
+        <meta name="DC.modified" content="2026-01-24" />
+        <meta name="DC.date.created" content="2025-01-01" />
+        <meta name="DC.type" content="Software" />
+        {/* Additional Microdata and Structured Data */}
+        <meta itemProp="name" content="BioBuntu" />
+        <meta itemProp="description" content="Open-source bioinformatics platform for genomic analysis" />
+        <meta itemProp="image" content="https://biobuntu.github.io/logo.png" />
+        {/* Pinterest Rich Pins / Open Graph Enhancements */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:updated_time" content="2026-01-24T00:00:00Z" />
+        {/* Article Metadata for Structured Content */}
+        <meta property="article:published_time" content="2025-01-01T00:00:00Z" />
+        <meta property="article:modified_time" content="2026-01-24T00:00:00Z" />
+        <meta property="article:author" content="https://mubashirali.vercel.app" />
+        <meta property="article:section" content="Bioinformatics" />
+        <meta property="article:tag" content="bioinformatics" />
+        <meta property="article:tag" content="genomics" />
+        <meta property="article:tag" content="data-analysis" />
         {/* Google Analytics (if needed, in addition to Vercel Analytics) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHP7FTR79Y"></script>
         <script
@@ -518,6 +593,51 @@ export default function RootLayout({
             `,
           }}
         />
+        {/* Schema.org Organization + Creative Work */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              "name": "BioBuntu",
+              "description": "Open-source bioinformatics platform for genomic analysis",
+              "creator": {
+                "@type": "Organization",
+                "name": "Code with Bismillah",
+                "url": "https://codewithbismillah.online"
+              },
+              "datePublished": "2025-01-01",
+              "dateModified": "2026-01-24",
+              "inLanguage": "en",
+              "keywords": "bioinformatics, genomics, data analysis, visualization",
+              "isAccessibleForFree": true
+            }),
+          }}
+        />
+        {/* Collection / Dataset Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Dataset",
+              "name": "BioBuntu Bioinformatics Platform",
+              "description": "Comprehensive platform for genomic analysis with multiple interfaces",
+              "url": "https://biobuntu.github.io",
+              "creator": {
+                "@type": "Person",
+                "name": "Mubashir Ali"
+              },
+              "datePublished": "2025-01-01",
+              "spatialCoverage": "Worldwide",
+              "license": "https://opensource.org/licenses/MIT"
+            }),
+          }}
+        />
+        {/* Preload Critical Resources */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//pypi.org/" />
@@ -525,6 +645,15 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.researchsquare.com" />
         <link rel="dns-prefetch" href="//www.youtube.com" />
         <link rel="dns-prefetch" href="//www.linkedin.com" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.clarity.ms" />
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
       </head>
       <body className={`font-sans antialiased`}>
         {children}
