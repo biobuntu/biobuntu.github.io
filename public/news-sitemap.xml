@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <url>
+    <loc>https://biobuntu.github.io/news/release-1</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioBuntu</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-02-12</news:publication_date>
+      <news:title>BioBuntu v0.1 Released</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://biobuntu.github.io/blogs/hello-world</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioBuntu</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-02-12</news:publication_date>
+      <news:title>Hello World — BioBuntu launch notes</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://biobuntu.github.io/news/release-1-2-4</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BioBuntu</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-13</news:publication_date>
+      <news:title>BioBuntu v1.2.4 Released</news:title>
+    </news:news>
+  </url>
+
+</urlset>

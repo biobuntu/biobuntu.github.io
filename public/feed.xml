@@ -41,6 +41,64 @@
   </entry>
 
   <entry>
+    <title>BioBuntu v1.2.4 Released</title>
+    <id>urn:uuid:biobuntu:entry:2026-01-13-1.2.4</id>
+    <published>2026-01-13T00:00:00Z</published>
+    <updated>2026-01-13T00:00:00Z</updated>
+    <link href="https://biobuntu.github.io/news/release-1-2-4"/>
+    <author>
+      <name>BioBuntu Team</name>
+    </author>
+    <category term="release"/>
+    <summary>Release 1.2.4: stability, packaging and expanded workflow support.</summary>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>BioBuntu v1.2.4 is available. Highlights include improved project management, better pipeline dependency handling, and packaging updates (.deb, PPA, Conda).</p>
+        <p>Install via <a href="https://pypi.org/project/biobuntu/">PyPI</a>: <code>pip install biobuntu==1.2.4</code></p>
+        <p>Read the full release notes at <a href="https://biobuntu.github.io/news/release-1-2-4">BioBuntu v1.2.4 Released</a>.</p>
+      </div>
+    </content>
+  </entry>
+
+  <entry>
+    <title>BioBuntu v0.1 Released</title>
+    <id>urn:uuid:biobuntu:entry:2026-02-12-release-0.1</id>
+    <published>2026-02-12T10:00:00Z</published>
+    <updated>2026-02-12T10:00:00Z</updated>
+    <link href="https://biobuntu.github.io/news/release-1"/>
+    <author>
+      <name>BioBuntu Team</name>
+    </author>
+    <category term="release"/>
+    <summary>BioBuntu v0.1 is available with core features for reproducible bioinformatics workflows.</summary>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>BioBuntu v0.1 is available. This release includes core features for reproducible pipelines and improved UX.</p>
+        <p>Read more at <a href="https://biobuntu.github.io/news/release-1">BioBuntu v0.1 Released</a>.</p>
+      </div>
+    </content>
+  </entry>
+
+  <entry>
+    <title>Hello World — BioBuntu launch notes</title>
+    <id>urn:uuid:biobuntu:entry:2026-02-12-hello-world</id>
+    <published>2026-02-12T08:00:00Z</published>
+    <updated>2026-02-12T08:00:00Z</updated>
+    <link href="https://biobuntu.github.io/blogs/hello-world"/>
+    <author>
+      <name>BioBuntu Team</name>
+    </author>
+    <category term="announcement"/>
+    <summary>Announcing the BioBuntu project and goals for accessible bioinformatics tooling.</summary>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <p>Welcome to BioBuntu. This post explains the project's goals to make bioinformatics more accessible.</p>
+        <p>Read more at <a href="https://biobuntu.github.io/blogs/hello-world">Hello World — BioBuntu launch notes</a>.</p>
+      </div>
+    </content>
+  </entry>
+
+  <entry>
     <title>New Documentation Site Launched</title>
     <id>urn:uuid:biobuntu:entry:docs</id>
     <published>2026-01-15T00:00:00Z</published>
@@ -57,4 +115,5 @@
       </div>
     </content>
   </entry>
+  <updated>2026-02-12T10:00:00Z</updated>
 </feed>

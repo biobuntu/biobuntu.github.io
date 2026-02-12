@@ -10,6 +10,17 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
+      "name": "BioBuntu",
+      "url": "https://biobuntu.github.io",
+      "logo": "https://biobuntu.github.io/logo.png",
+      "sameAs": [
+        "https://github.com/biobuntu/biobuntu",
+        "https://www.linkedin.com/company/biobuntu/",
+        "https://x.com/CWB_Online"
+      ]
+    },
+    {
+      "@type": "Organization",
       "name": "Code with Bismillah",
       "url": "https://codewithbismillah.online",
       "logo": "https://biobuntu.github.io/logo.png",
@@ -490,6 +501,7 @@ export default function RootLayout({
         <meta name="subject" content="Bioinformatics, Genomic Analysis, Data Visualization, Computational Biology" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="canonical" href="https://biobuntu.github.io" />
+        <link rel="alternate" href="https://biobuntu.github.io" hrefLang="en" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
         <link rel="author" href="https://mubashirali.vercel.app" />
@@ -589,55 +601,17 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-BHP7FT');
+              gtag('config', 'G-BHP7FTR79Y');
             `,
           }}
         />
-        {/* Schema.org Organization + Creative Work */}
+  {/* Site-wide structured data injected once to avoid duplication */}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "CreativeWork",
-              "name": "BioBuntu",
-              "description": "Open-source bioinformatics platform for genomic analysis",
-              "creator": {
-                "@type": "Organization",
-                "name": "Code with Bismillah",
-                "url": "https://codewithbismillah.online"
-              },
-              "datePublished": "2025-01-01",
-              "dateModified": "2026-01-24",
-              "inLanguage": "en",
-              "keywords": "bioinformatics, genomics, data analysis, visualization",
-              "isAccessibleForFree": true
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Collection / Dataset Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Dataset",
-              "name": "BioBuntu Bioinformatics Platform",
-              "description": "Comprehensive platform for genomic analysis with multiple interfaces",
-              "url": "https://biobuntu.github.io",
-              "creator": {
-                "@type": "Person",
-                "name": "Mubashir Ali"
-              },
-              "datePublished": "2025-01-01",
-              "spatialCoverage": "Worldwide",
-              "license": "https://opensource.org/licenses/MIT"
-            }),
-          }}
-        />
-        {/* Preload Critical Resources */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* RSS / Atom feed for discovery */}
+        <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="BioBuntu RSS Feed" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
         <link rel="dns-prefetch" href="//pypi.org/" />
@@ -647,13 +621,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//www.linkedin.com" />
         <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//www.clarity.ms" />
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd),
-          }}
-        />
+        {/* (site JSON-LD injected above) */}
       </head>
       <body className={`font-sans antialiased`}>
         {children}
