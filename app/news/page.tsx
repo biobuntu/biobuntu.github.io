@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import SEO from "../../components/seo"
+import BreadcrumbJsonLd from "../../components/breadcrumb-jsonld"
 
 export default function NewsPage() {
   const siteUrl = "https://biobuntu.github.io"
@@ -10,6 +11,12 @@ export default function NewsPage() {
         title="BioBuntu — News"
         description="Latest news and press about BioBuntu."
         url={`${siteUrl}/news`}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { position: 1, name: "Home", item: "https://biobuntu.github.io" },
+          { position: 2, name: "News", item: "https://biobuntu.github.io/news" },
+        ]}
       />
 
       <h1 className="text-3xl font-bold mb-6">News</h1>

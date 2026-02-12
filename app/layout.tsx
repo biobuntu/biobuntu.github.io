@@ -547,7 +547,23 @@ export default function RootLayout({
         {/* Robots.txt / Crawler Hints */}
         <link rel="robots" href="/robots.txt" />
         {/* Schema.org Breadcrumb Navigation */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context": "https://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 1,"name": "Home","item": "https://biobuntu.github.io"},{"@type": "ListItem","position": 2,"name": "Docs","item": "https://biobuntu.github.io/docs"},{"@type": "ListItem","position": 3,"name": "FAQ","item": "https://biobuntu.github.io/faq"},{"@type": "ListItem","position": 4,"name": "Community","item": "https://biobuntu.github.io/community"}]})}} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://biobuntu.github.io" },
+                { "@type": "ListItem", position: 2, name: "Blogs", item: "https://biobuntu.github.io/blogs" },
+                { "@type": "ListItem", position: 3, name: "News", item: "https://biobuntu.github.io/news" },
+                { "@type": "ListItem", position: 4, name: "Docs", item: "https://biobuntu.github.io/docs" },
+                { "@type": "ListItem", position: 5, name: "FAQ", item: "https://biobuntu.github.io/faq" },
+                { "@type": "ListItem", position: 6, name: "Community", item: "https://biobuntu.github.io/community" }
+              ]
+            })
+          }}
+        />
         {/* Local Business Schema (if applicable) */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context": "https://schema.org","@type": "LocalBusiness","name": "Code with Bismillah","url": "https://codewithbismillah.online","email": "mubashirali1837@gmail.com","areaServed": "Worldwide","priceRange": "Free","mainEntity": {"@type": "SoftwareApplication","name": "BioBuntu"}})}} />
         {/* Product Schema Enhancement */}
