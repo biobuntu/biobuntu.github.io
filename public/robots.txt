@@ -23,6 +23,7 @@ Crawl-delay: 1
 # Sitemap location
 Sitemap: https://biobuntu.github.io/sitemap.xml
 Sitemap: https://biobuntu.github.io/sitemap-index.xml
+Sitemap: https://biobuntu.github.io/news-sitemap.xml
 
 # Block bad bots
 User-agent: AhrefsBot
