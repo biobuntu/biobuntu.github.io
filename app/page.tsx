@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Code2, Zap, GitBranch, BarChart3, Cpu, BookOpen } from "lucide-react"
+import { ArrowRight, Code2, Zap, GitBranch, BarChart3, Cpu, BookOpen, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -44,11 +44,17 @@ export default function Home() {
               >
                 Get Started <ArrowRight size={18} />
               </a>
+              <Link
+                href="/about"
+                className="px-6 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-secondary transition-colors text-center"
+              >
+                Learn Our Story
+              </Link>
               <a
                 href="https://github.com/biobuntu/biobuntu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-secondary transition-colors"
+                className="px-6 py-3 border border-border text-foreground rounded-lg font-semibold hover:bg-secondary transition-colors hidden sm:inline-flex items-center justify-center gap-2"
               >
                 View on GitHub
               </a>
@@ -239,6 +245,149 @@ export default function Home() {
             >
               Read Documentation
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Schema JSON-LD */}
+      <script type="application/ld+json" suppressHydrationWarning>
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is BioBuntu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BioBuntu is a comprehensive open-source bioinformatics platform that provides CLI, GUI, and web interfaces for running advanced genomic analysis pipelines. It's designed for researchers, labs, and bioinformatics teams to easily perform RNA-seq, variant calling, metagenomics, and other genomic analyses."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I install BioBuntu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can install BioBuntu in multiple ways: (1) From PyPI using 'pip install biobuntu', (2) From source by cloning the GitHub repository, (3) Using Debian/Ubuntu packages, or (4) Via Conda package manager. Choose the method that works best for your environment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is BioBuntu free?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, BioBuntu is completely free and open-source software. It's released under the MIT License, which means you can use, modify, and distribute it freely."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What features does BioBuntu offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BioBuntu offers project management, advanced pipelines with parallel execution, multiple interfaces (CLI, GUI, Web), RNA-seq analysis, variant calling, metagenomics support, quality control pipelines, tool integration (FastQC, BWA, GATK, HISAT2, Samtools), remote lab support with API endpoints, and workflow automation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the system requirements for BioBuntu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BioBuntu is platform-independent and supports Windows, macOS, and Linux. We recommend at least 4GB RAM and a modern processor for optimal performance. Specific requirements may vary depending on the analysis pipelines you use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use BioBuntu for production environments?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, BioBuntu is designed to be production-ready. It supports remote lab execution, API endpoints for integration with other systems, and can handle complex workflows with dependencies and parallel execution. Many research institutions use BioBuntu for their genomic analysis pipelines."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I report bugs or request features?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can report bugs or request features through the GitHub Issues page at https://github.com/biobuntu/biobuntu/issues. Please include detailed information about the issue and steps to reproduce it."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who created BioBuntu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BioBuntu was founded and is maintained by Mubashir Ali, a bioinformatician and software developer. It's developed under Code with Bismillah organization with the goal of making advanced bioinformatics accessible to researchers worldwide."
+              }
+            }
+          ]
+        })}
+      </script>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-card border-y border-border">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-muted-foreground">Find answers to common questions about BioBuntu</p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              {
+                question: "What is BioBuntu?",
+                answer: "BioBuntu is a comprehensive open-source bioinformatics platform that provides CLI, GUI, and web interfaces for running advanced genomic analysis pipelines. It's designed for researchers, labs, and bioinformatics teams to easily perform RNA-seq, variant calling, metagenomics, and other genomic analyses."
+              },
+              {
+                question: "How do I install BioBuntu?",
+                answer: "You can install BioBuntu from PyPI using 'pip install biobuntu', from source by cloning the GitHub repository, using Debian/Ubuntu packages, or via Conda. Choose the installation method that works best for your environment."
+              },
+              {
+                question: "Is BioBuntu free?",
+                answer: "Yes, BioBuntu is completely free and open-source software released under the MIT License. You can use, modify, and distribute it freely."
+              },
+              {
+                question: "What features does BioBuntu offer?",
+                answer: "BioBuntu offers project management, advanced pipelines with parallel execution, multiple interfaces (CLI, GUI, Web), RNA-seq analysis, variant calling, metagenomics support, quality control pipelines, tool integration, remote lab support, and workflow automation."
+              },
+              {
+                question: "What are the system requirements?",
+                answer: "BioBuntu supports Windows, macOS, and Linux. We recommend at least 4GB RAM and a modern processor. Specific requirements may vary depending on the analysis pipelines you use."
+              },
+              {
+                question: "Can I use BioBuntu for production environments?",
+                answer: "Yes, BioBuntu is production-ready with support for remote lab execution, API endpoints for integration, and the ability to handle complex workflows with dependencies and parallel execution."
+              },
+              {
+                question: "How do I get support?",
+                answer: "You can get support by visiting the GitHub Issues page (https://github.com/biobuntu/biobuntu/issues) for bug reports and feature requests, or contact the maintainers directly."
+              },
+              {
+                question: "Who created BioBuntu?",
+                answer: "BioBuntu was founded and is maintained by Mubashir Ali, a bioinformatician and software developer. It's developed under Code with Bismillah organization."
+              }
+            ].map((faq, index) => (
+              <details key={index} className="group border border-border rounded-lg bg-background hover:border-primary/50 transition-colors">
+                <summary className="p-6 cursor-pointer flex justify-between items-center">
+                  <h3 className="font-semibold text-foreground text-lg">{faq.question}</h3>
+                  <ChevronDown className="w-5 h-5 text-muted-foreground group-open:rotate-180 transition-transform" />
+                </summary>
+                <div className="px-6 pb-6 text-muted-foreground border-t border-border pt-4">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+
+          <div className="mt-12 p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20 text-center">
+            <p className="text-muted-foreground mb-4">Still have questions?</p>
+            <a 
+              href="https://github.com/biobuntu/biobuntu/issues" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+            >
+              Open an Issue on GitHub
+            </a>
           </div>
         </div>
       </section>

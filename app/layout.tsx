@@ -9,6 +9,223 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Person",
+      "@id": "https://mubashirali.vercel.app/#person",
+      "name": "Mubashir Ali",
+      "url": "https://mubashirali.vercel.app",
+      "jobTitle": "Bioinformatician & Data Science Professional",
+      "workLocation": "Remote",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Quaid-i-Azam University"
+      },
+      "occupation": [
+        {
+          "@type": "Occupation",
+          "name": "Bioinformatician"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Entity SEO Specialist"
+        },
+        {
+          "@type": "Occupation",
+          "name": "DevOps Expert"
+        },
+        {
+          "@type": "Occupation",
+          "name": "MLOps Engineer"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Full-Stack Developer"
+        }
+      ],
+      "knowsAbout": [
+        "Bioinformatics",
+        "Genomic Analysis",
+        "Data Science",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Software Development",
+        "Python Programming",
+        "Entity SEO",
+        "Schema.org",
+        "Knowledge Graph",
+        "DevOps",
+        "MLOps",
+        "Kubernetes",
+        "CI/CD",
+        "Data Visualization",
+        "Computational Biology",
+        "NGS Analysis",
+        "RNA-seq Analysis"
+      ],
+      "expertise": [
+        "Bioinformatics Platform Development",
+        "Entity SEO & Knowledge Graph Optimization",
+        "Schema.org Structured Data",
+        "DevOps & Infrastructure Automation",
+        "MLOps & Machine Learning Pipelines",
+        "Genomics Data Analysis",
+        "Open-Source Software Maintainance"
+      ],
+      "subjectOf": [
+        {
+          "@type": "Article",
+          "@id": "https://www.linkedin.com/feed/update/urn:li:activity:7451924677255577600/",
+          "headline": "3 things most SEO guides won't tell you about Google's Knowledge Graph",
+          "description": "LinkedIn post discussing Entity SEO, Knowledge Panel strategies, and about page optimization",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7451924677255577600/"
+        },
+        {
+          "@type": "Article",
+          "@id": "https://www.linkedin.com/feed/update/urn:li:activity:7451556576466755584/",
+          "headline": "Google your name. What shows up? Building Entity Presence and Knowledge Panels",
+          "description": "LinkedIn post about entity SEO, Knowledge Graph optimization, and building trusted online presence",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7451556576466755584/"
+        },
+        {
+          "@type": "Article",
+          "@id": "https://www.linkedin.com/feed/update/urn:li:activity:7451679929215311872/",
+          "headline": "Mubashir Ali in Featured Faces - Bioinformatics & Data Science Professional",
+          "description": "LinkedIn profile feature highlighting expertise in bioinformatics, genomics, and AI",
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7451679929215311872/"
+        }
+      ],
+      "sameAs": [
+        "https://linkedin.com/in/mubashirali3/",
+        "https://github.com/mubashir1837",
+        "https://x.com/mubashir1837",
+        "https://dev.to/mubashir1837",
+        "https://stackoverflow.com/users/26145758/mubashir-ali",
+        "https://www.youtube.com/@CodeWithBismillah",
+        "https://scholar.google.com/citations?user=cSRYdWAAAAAJ",
+        "https://orcid.org/0009-0006-0222-7585",
+        "https://www.producthunt.com/@mubashir1837/",
+        "https://www.researchgate.net/profile/Mubashir-Ali-31"
+      ],
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Code with Bismillah",
+          "url": "https://codewithbismillah.online"
+        },
+        {
+          "@type": "Organization",
+          "name": "TynexAI",
+          "url": "https://tynexai.com"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://biobuntu.github.io/#software",
+      "name": "BioBuntu",
+      "alternateName": ["biobuntu", "Bio Data Hub"],
+      "url": "https://biobuntu.github.io/",
+      "description": "Comprehensive open-source bioinformatics ecosystem for genomic data analysis. Integrates CLI, BioBuntu Studio GUI, and Web Dashboard for advanced genomic analysis pipelines including RNA-seq, variant calling, metagenomics, QC, and parallel execution.",
+      "applicationCategory": "BioinformaticsSoftware",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": ["Researchers", "Bioinformaticians", "Genomics Labs", "Universities", "Biotech Companies"]
+      },
+      "operatingSystem": "Linux, Windows, macOS, Web",
+      "softwareVersion": "1.2.4",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": {
+        "@type": "Person",
+        "@id": "https://mubashirali.vercel.app/#person",
+        "name": "Mubashir Ali",
+        "url": "https://mubashirali.vercel.app/"
+      },
+      "creator": {
+        "@type": "Person",
+        "@id": "https://mubashirali.vercel.app/#person",
+        "name": "Mubashir Ali"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://codewithbismillah.online/#organization",
+        "name": "Code with Bismillah",
+        "url": "https://codewithbismillah.online"
+      },
+      "downloadUrl": "https://pypi.org/project/biobuntu/",
+      "codeRepository": "https://github.com/biobuntu/biobuntu",
+      "isBasedOn": "Community feedback, research requirements, and open-source contributions",
+      "featureList": "RNA-seq analysis, Variant calling, Metagenomics, Quality control, Parallel execution, Project management, Multiple interfaces (CLI, GUI, Web), Tool integration, Remote lab support, Workflow automation, DevOps-ready architecture, MLOps integration",
+      "subjectOf": [
+        {
+          "@type": "Review",
+          "url": "https://www.saashub.com/BioBuntu",
+          "name": "SaaSHub Review",
+          "description": "BioBuntu featured as a leading bioinformatics platform"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "BioBuntu: An Integrated VS Code Extension for Streamlined Bioinformatics Dataset Analysis and Visualization",
+          "url": "https://www.researchsquare.com/article/rs-7861003/v1",
+          "author": {
+            "@type": "Person",
+            "name": "Mubashir Ali"
+          }
+        }
+      ],
+      "sameAs": [
+        "https://github.com/biobuntu/biobuntu",
+        "https://pypi.org/project/biobuntu/",
+        "https://www.saashub.com/BioBuntu",
+        "https://www.linkedin.com/company/biobuntu",
+        "https://www.producthunt.com/products/biobuntu",
+        "https://libraries.io/pypi/biobuntu",
+        "https://www.piwheels.org/project/biobuntu/"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://codewithbismillah.online/#organization",
+      "name": "Code with Bismillah",
+      "url": "https://codewithbismillah.online",
+      "logo": "https://biobuntu.github.io/biobuntu.png",
+      "description": "Technology and education organization focused on bioinformatics, data science, and DevOps/MLOps solutions",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://mubashirali.vercel.app/#person",
+        "name": "Mubashir Ali"
+      },
+      "contact": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "mubashirali1837@gmail.com"
+      },
+      "knowsAbout": [
+        "Bioinformatics",
+        "Data Science",
+        "DevOps",
+        "MLOps",
+        "Entity SEO",
+        "Knowledge Graphs",
+        "Open Source Software"
+      ],
+      "mainEntity": {
+        "@type": "SoftwareApplication",
+        "@id": "https://biobuntu.github.io/#software",
+        "name": "BioBuntu"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/code-with-bismiallah/",
+        "https://github.com/Code-with-Bismillah",
+        "https://www.youtube.com/@CodeWithBismillah"
+      ]
+    },
+    {
       "@type": "Organization",
       "name": "BioBuntu",
       "url": "https://biobuntu.github.io",

@@ -10,6 +10,7 @@ export function Navigation() {
 
   const links = [
     { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
     { href: "/#features", label: "Features" },
     { href: "/docs", label: "Documentation" },
     { href: "/community", label: "Community" },
@@ -36,8 +37,9 @@ export function Navigation() {
             <a
               href="https://github.com/biobuntu/biobuntu"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="me noopener noreferrer"
               className="px-4 py-2 text-foreground hover:bg-secondary rounded-lg transition-colors"
+              title="BioBuntu on GitHub"
             >
               GitHub
             </a>
@@ -46,8 +48,18 @@ export function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-orange-700 text-primary-foreground rounded-lg hover:bg-purple-900 transition-colors"
+              title="Install BioBuntu from PyPI"
             >
               Install
+            </a>
+            <a
+              href="https://mubashirali.vercel.app"
+              target="_blank"
+              rel="me noopener noreferrer"
+              className="px-4 py-2 text-foreground hover:text-primary transition-colors text-sm"
+              title="Creator - Mubashir Ali"
+            >
+              Creator
             </a>
           </div>
 
@@ -74,8 +86,9 @@ export function Navigation() {
               <a
                 href="https://github.com/biobuntu/biobuntu"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className="flex-1 px-4 py-2 text-center text-foreground hover:bg-secondary rounded-lg transition-colors"
+                title="BioBuntu on GitHub"
               >
                 GitHub
               </a>
@@ -84,8 +97,18 @@ export function Navigation() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 px-4 py-2 text-center bg-primary text-primary-foreground rounded-lg hover:bg-primary/90"
+                title="Install BioBuntu from PyPI"
               >
                 Install
+              </a>
+              <a
+                href="https://mubashirali.vercel.app"
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="flex-1 px-4 py-2 text-center text-foreground hover:bg-secondary rounded-lg transition-colors text-sm"
+                title="Creator - Mubashir Ali"
+              >
+                Creator
               </a>
             </div>
           </div>
