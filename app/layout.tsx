@@ -159,7 +159,17 @@ const jsonLd = {
           "@type": "Review",
           "url": "https://www.saashub.com/BioBuntu",
           "name": "SaaSHub Review",
-          "description": "BioBuntu featured as a leading bioinformatics platform"
+          "description": "BioBuntu featured as a leading bioinformatics platform",
+          "author": {
+            "@type": "Organization",
+            "name": "SaaSHub",
+            "url": "https://www.saashub.com"
+          },
+          "itemReviewed": {
+            "@type": "SoftwareApplication",
+            "name": "BioBuntu",
+            "url": "https://biobuntu.github.io"
+          }
         },
         {
           "@type": "ScholarlyArticle",
@@ -517,59 +527,6 @@ const jsonLd = {
       "datePublished": "2025-01-01",
       "description": "BioBuntu is a comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams.",
       "keywords": ["BioBuntu", "bioinformatics", "PyPI", "Ubuntu"]
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is BioBuntu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BioBuntu is a comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do I install BioBuntu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "You can install BioBuntu from the PyPI by searching for 'BioBuntu' or using the command 'pip install biobuntu' in CMD",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What features does BioBuntu offer?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Project Management: Create and manage bioinformatics projects with organized directory structures, Advanced Pipelines: Support for complex workflows with dependencies and parallel execution, Multiple Interfaces: CLI, Desktop GUI (BioBuntu Studio), and Web Dashboard, Remote Lab Support: API endpoints for remote pipeline execution with job tracking, Packaging: Available as .deb packages, PPA, and Conda packages, Workflow Support: RNA-seq, variant calling, metagenomics, and QC pipelines, Tool Integration: Wrappers for FastQC, BWA, GATK, HISAT2, Samtools",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What are the system requirements for BioBuntu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BioBuntu is platform independent. It supports Windows, macOS, and Linux.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do I update BioBuntu?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BioBuntu updates  by pip install biobuntu==1.2.4 --upgrade in CMD",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How do I report bugs or request features?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Report bugs or request features through GitHub Issues at https://github.com/biobuntu/biobuntu/issues. Include detailed steps to reproduce any issues.",
-          },
-        },
-      ],
     },
     {
       "@type": "VideoObject",
