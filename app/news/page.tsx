@@ -5,7 +5,44 @@ import BreadcrumbJsonLd from "../../components/breadcrumb-jsonld"
 
 export default function NewsPage() {
   const siteUrl = "https://biobuntu.github.io"
+  
+  const newsCollectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://biobuntu.github.io/news#collection",
+    "name": "BioBuntu News",
+    "description": "Latest news, releases, and announcements about BioBuntu bioinformatics platform",
+    "url": "https://biobuntu.github.io/news",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Code with Bismillah",
+      "url": "https://codewithbismillah.online"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://biobuntu.github.io/#website"
+    },
+    "hasPart": [
+      {
+        "@type": "NewsArticle",
+        "headline": "BioBuntu v0.1 Released",
+        "url": "https://biobuntu.github.io/news/release-1",
+        "datePublished": "2026-02-12",
+        "author": {"@type": "Person", "name": "Mubashir Ali"},
+        "publisher": {"@type": "Organization", "name": "Code with Bismillah"}
+      }
+    ]
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(newsCollectionSchema)
+        }}
+      />
     <div className="max-w-4xl mx-auto py-12">
       <SEO
         title="BioBuntu — News"
@@ -30,5 +67,6 @@ export default function NewsPage() {
         </li>
       </ul>
     </div>
+    </>
   )
 }

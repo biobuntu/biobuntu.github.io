@@ -5,7 +5,44 @@ import BreadcrumbJsonLd from "../../components/breadcrumb-jsonld"
 
 export default function BlogsPage() {
   const siteUrl = "https://biobuntu.github.io"
+  
+  const collectionPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://biobuntu.github.io/blogs#collection",
+    "name": "BioBuntu Blogs",
+    "description": "Blog posts about bioinformatics tooling, genomic analysis, and best practices",
+    "url": "https://biobuntu.github.io/blogs",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Code with Bismillah",
+      "url": "https://codewithbismillah.online"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://biobuntu.github.io/#website"
+    },
+    "hasPart": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Hello World — BioBuntu launch notes",
+        "url": "https://biobuntu.github.io/blogs/hello-world",
+        "datePublished": "2026-02-12",
+        "author": {"@type": "Person", "name": "Mubashir Ali"},
+        "publisher": {"@type": "Organization", "name": "Code with Bismillah"}
+      }
+    ]
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(collectionPageSchema)
+        }}
+      />
     <div className="max-w-4xl mx-auto py-12">
       <SEO
         title="BioBuntu — Blogs"
@@ -30,5 +67,6 @@ export default function BlogsPage() {
         </li>
       </ul>
     </div>
+    </>
   )
 }

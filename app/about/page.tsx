@@ -27,7 +27,46 @@ export const metadata: Metadata = {
 }
 
 export default function About() {
+  const aboutPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://biobuntu.github.io/about#about",
+    "name": "About BioBuntu",
+    "description": "Learn about BioBuntu's mission and Mubashir Ali, founder of BioBuntu and TynexAI",
+    "url": "https://biobuntu.github.io/about",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Code with Bismillah",
+      "url": "https://codewithbismillah.online"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://biobuntu.github.io/#website"
+    },
+    "mentions": [
+      {
+        "@type": "Person",
+        "name": "Mubashir Ali",
+        "url": "https://mubashirali.vercel.app",
+        "jobTitle": "Founder"
+      },
+      {
+        "@type": "Organization",
+        "name": "Code with Bismillah",
+        "url": "https://codewithbismillah.online"
+      }
+    ]
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(aboutPageSchema)
+        }}
+      />
     <div className="min-h-screen bg-background">
       <Navigation />
 
@@ -301,5 +340,6 @@ export default function About() {
 
       <Footer />
     </div>
+    </>
   )
 }

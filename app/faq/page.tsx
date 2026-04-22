@@ -14,7 +14,25 @@ export const metadata: Metadata = {
 };
 
 export default function FAQPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is Biobuntu?", "acceptedAnswer": {"@type": "Answer", "text": "A comprehensive platform for running genomic analysis pipelines with CLI, GUI, and web interfaces. Perfect for researchers, labs, and bioinformatics teams."}},
+      {"@type": "Question", "name": "Is BioBuntu free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes! BioBuntu is completely free and open-source."}},
+      {"@type": "Question", "name": "What is the license for BioBuntu?", "acceptedAnswer": {"@type": "Answer", "text": "BioBuntu is released under the MIT License. You are free to use, modify, and distribute the software for both personal and commercial purposes."}},
+    ]
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
     <main className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto prose prose-sm sm:prose lg:prose-lg dark:prose-invert">
         <h1>Frequently Asked Questions (FAQ)</h1>

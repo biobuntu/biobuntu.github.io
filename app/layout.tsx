@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { EnhancedSEOSchemas } from "@/components/seo-schemas-enhanced"
 import "./globals.css"
 
 
@@ -551,6 +552,18 @@ const jsonLd = {
         name: "Code with Bismillah",
       },
     },
+    {
+      "@type": "WebSite",
+      "@id": "https://biobuntu.github.io/#website",
+      "name": "BioBuntu",
+      "url": "https://biobuntu.github.io",
+      "description": "Comprehensive open-source bioinformatics platform for genomic analysis",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@type": "Organization",
+        "@id": "https://codewithbismillah.online/#organization"
+      }
+    },
   ],
 }
 
@@ -800,6 +813,8 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Enhanced SEO Schemas */}
+        <EnhancedSEOSchemas />
         {/* RSS / Atom feed for discovery */}
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="BioBuntu RSS Feed" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />

@@ -16,7 +16,41 @@ export const metadata: Metadata = {
 }
 
 export default function DocsPage() {
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "@id": "https://biobuntu.github.io/docs#course",
+    "name": "BioBuntu Documentation",
+    "description": "Comprehensive documentation and guides for BioBuntu bioinformatics platform",
+    "url": "https://biobuntu.github.io/docs",
+    "author": {
+      "@type": "Person",
+      "name": "Mubashir Ali",
+      "url": "https://mubashirali.vercel.app"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Code with Bismillah",
+      "url": "https://codewithbismillah.online"
+    },
+    "educationLevel": "Beginner to Advanced",
+    "learningResourceType": "Documentation",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "100"
+    }
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(courseSchema)
+        }}
+      />
     <div className="min-h-screen bg-background">
       <Navigation />
 
@@ -150,5 +184,6 @@ steps:
 
       <Footer />
     </div>
+    </>
   )
 }

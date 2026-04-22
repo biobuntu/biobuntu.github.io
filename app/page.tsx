@@ -17,7 +17,36 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
+  const announcementSchema = {
+    "@context": "https://schema.org",
+    "@type": "Announcement",
+    "name": "BioBuntu v1.2.4 Released",
+    "headline": "BioBuntu v1.2.4 - Comprehensive Open-Source Bioinformatics Platform",
+    "description": "BioBuntu v1.2.4 is now available with support for RNA-seq, variant calling, metagenomics, parallel execution, and more",
+    "url": "https://biobuntu.github.io",
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-01-24",
+    "author": {
+      "@type": "Organization",
+      "name": "Code with Bismillah",
+      "url": "https://codewithbismillah.online"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Code with Bismillah"
+    },
+    "image": "https://biobuntu.github.io/logo.png"
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(announcementSchema)
+        }}
+      />
     <div className="min-h-screen bg-background">
       <Navigation />
 
@@ -394,5 +423,6 @@ export default function Home() {
 
       <Footer />
     </div>
+    </>
   )
 }
