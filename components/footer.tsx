@@ -5,50 +5,6 @@ export function Footer() {
   return (
     <footer className="bg-card border-t border-border">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Meet the Founder Section */}
-        <div className="mb-12 pb-8 border-b border-border">
-          <h3 className="text-2xl font-bold text-foreground mb-6">Meet the Founder</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h4 className="text-xl font-semibold text-foreground mb-3">Mubashir Ali</h4>
-              <p className="text-muted-foreground mb-4">
-                <strong>Bioinformatics & Data Science Professional</strong> | Bridging Biology & Data | Researcher | Genomics, Machine Learning & AI specialist. Founder of @TynexAI and @Code with Bismillah. Expert in Schema.org structured data, Entity SEO, DevOps & MLOps architecture. Dedicated to making advanced genomic analysis accessible to researchers worldwide.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Combines expertise in computational biology, data science, and enterprise software development to create powerful, production-ready bioinformatics tools. Published researcher on bioinformatics platforms and Knowledge Graph entity building. Regular contributor to the scientific community through open-source innovation and technical education.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">Bioinformatics</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">Entity SEO</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">DevOps</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">MLOps</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">Schema.org</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">Genomics</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">ML/AI</span>
-                <span className="px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">Content Creator</span>
-              </div>
-              <a 
-                href="https://mubashirali.vercel.app" 
-                target="_blank" 
-                rel="me noopener noreferrer"
-                className="inline-block px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium text-sm"
-              >
-                View Full Profile
-              </a>
-            </div>
-            <div className="flex justify-center">
-              <div className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl border border-border">
-                <div className="w-48 h-48 mx-auto bg-background rounded-xl border border-border flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-muted-foreground mb-2">Founder & Creator</div>
-                    <div className="font-bold text-lg text-foreground">Mubashir Ali</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Press & Recognition Section */}
         <div className="mb-12 pb-8 border-b border-border">
           <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">

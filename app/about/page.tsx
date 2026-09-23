@@ -136,8 +136,12 @@ export default function About() {
             <div className="lg:col-span-1">
               <div className="sticky top-32 p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl border border-primary/20">
                 <div className="text-center mb-6">
-                  <div className="w-32 h-32 mx-auto bg-background rounded-full border-2 border-primary flex items-center justify-center mb-4">
-                    <span className="text-6xl">👨‍💻</span>
+                  <div className="w-32 h-32 mx-auto overflow-hidden rounded-full border-2 border-primary mb-4 bg-background shadow-sm">
+                    <img
+                      src="/founder/Mubashir-Ali(81).png"
+                      alt="Mubashir Ali"
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground">Mubashir Ali</h3>
                   <p className="text-sm text-muted-foreground mt-2">AI & Machine Learning Engineer & Researcher</p>
