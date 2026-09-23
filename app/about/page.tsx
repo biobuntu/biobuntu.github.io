@@ -151,7 +151,20 @@ export default function About() {
                   <div>
                     <p className="text-xs font-semibold text-primary uppercase">Expertise</p>
                     <div className="flex flex-wrap gap-1 mt-2">
-                      {["Entity SEO", "Schema.org", "Bioinformatics", "DevOps", "MLOps", "Genomics", "ML/AI"].map((tag) => (
+                      {[
+                        "AI/ML",
+                        "Artificial Intelligence",
+                        "Machine Learning",
+                        "Deep Learning",
+                        "Biological Data Analysis",
+                        "Computational Biology",
+                        "Bioinformatics",
+                        "Genomics",
+                        "Entity SEO",
+                        "Schema.org",
+                        "DevOps",
+                        "MLOps"
+                      ].map((tag) => (
                         <span key={tag} className="px-2 py-1 text-xs bg-primary/20 text-primary rounded">
                           {tag}
                         </span>
