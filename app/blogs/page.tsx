@@ -30,6 +30,30 @@ export default function BlogsPage() {
         "datePublished": "2026-02-12",
         "author": {"@type": "Person", "name": "Mubashir Ali"},
         "publisher": {"@type": "Organization", "name": "Code with Bismillah"}
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Building Reproducible Genomic Workflows with BioBuntu",
+        "url": "https://biobuntu.github.io/blogs/building-reproducible-genomic-workflows",
+        "datePublished": "2026-02-21",
+        "author": {"@type": "Person", "name": "Mubashir Ali"},
+        "publisher": {"@type": "Organization", "name": "Code with Bismillah"}
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "AI-Powered Genomics: Where Machine Learning Meets Biological Insight",
+        "url": "https://biobuntu.github.io/blogs/ai-powered-genomics",
+        "datePublished": "2026-02-28",
+        "author": {"@type": "Person", "name": "Mubashir Ali"},
+        "publisher": {"@type": "Organization", "name": "Code with Bismillah"}
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Why BioBuntu Matters for Modern Lab Operations",
+        "url": "https://biobuntu.github.io/blogs/biobuntu-for-lab-operations",
+        "datePublished": "2026-03-07",
+        "author": {"@type": "Person", "name": "Mubashir Ali"},
+        "publisher": {"@type": "Organization", "name": "Code with Bismillah"}
       }
     ]
   };
@@ -58,12 +82,30 @@ export default function BlogsPage() {
 
       <h1 className="text-3xl font-bold mb-6">Blogs</h1>
 
-      <ul className="space-y-4">
-        <li>
-          <Link href="/blogs/hello-world" className="text-primary font-medium">
+      <ul className="space-y-6">
+        <li className="border-b border-border pb-4">
+          <Link href="/blogs/hello-world" className="text-primary font-medium text-lg">
             Hello World — BioBuntu launch notes
           </Link>
-          <p className="text-sm text-muted-foreground">Published: 2026-02-12</p>
+          <p className="text-sm text-muted-foreground mt-1">Published: 2026-02-12</p>
+        </li>
+        <li className="border-b border-border pb-4">
+          <Link href="/blogs/building-reproducible-genomic-workflows" className="text-primary font-medium text-lg">
+            Building Reproducible Genomic Workflows with BioBuntu
+          </Link>
+          <p className="text-sm text-muted-foreground mt-1">Published: 2026-02-21</p>
+        </li>
+        <li className="border-b border-border pb-4">
+          <Link href="/blogs/ai-powered-genomics" className="text-primary font-medium text-lg">
+            AI-Powered Genomics: Where Machine Learning Meets Biological Insight
+          </Link>
+          <p className="text-sm text-muted-foreground mt-1">Published: 2026-02-28</p>
+        </li>
+        <li className="pb-2">
+          <Link href="/blogs/biobuntu-for-lab-operations" className="text-primary font-medium text-lg">
+            Why BioBuntu Matters for Modern Lab Operations
+          </Link>
+          <p className="text-sm text-muted-foreground mt-1">Published: 2026-03-07</p>
         </li>
       </ul>
     </div>
