@@ -531,5 +531,6 @@ export default function FAQPage() {
         </p>
       </div>
     </main>
+    </>
   );
 }
