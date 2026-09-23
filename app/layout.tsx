@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { EnhancedSEOSchemas } from "@/components/seo-schemas-enhanced"
+import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
 
@@ -14,7 +15,7 @@ const jsonLd = {
       "@id": "https://mubashirali.vercel.app/#person",
       "name": "Mubashir Ali",
       "url": "https://mubashirali.vercel.app",
-      "jobTitle": "Bioinformatician & Data Science Professional",
+      "jobTitle": "AI & Machine Learning Engineer & Researcher",
       "workLocation": "Remote",
       "alumniOf": {
         "@type": "EducationalOrganization",
@@ -23,53 +24,50 @@ const jsonLd = {
       "occupation": [
         {
           "@type": "Occupation",
-          "name": "Bioinformatician"
+          "name": "AI Engineer"
         },
         {
           "@type": "Occupation",
-          "name": "Entity SEO Specialist"
+          "name": "Machine Learning Researcher"
         },
         {
           "@type": "Occupation",
-          "name": "DevOps Expert"
-        },
-        {
-          "@type": "Occupation",
-          "name": "MLOps Engineer"
+          "name": "Computational Biology Researcher"
         },
         {
           "@type": "Occupation",
           "name": "Full-Stack Developer"
+        },
+        {
+          "@type": "Occupation",
+          "name": "Startup Founder"
         }
       ],
       "knowsAbout": [
-        "Bioinformatics",
-        "Genomic Analysis",
-        "Data Science",
-        "Machine Learning",
         "Artificial Intelligence",
-        "Software Development",
-        "Python Programming",
-        "Entity SEO",
-        "Schema.org",
-        "Knowledge Graph",
-        "DevOps",
-        "MLOps",
-        "Kubernetes",
-        "CI/CD",
-        "Data Visualization",
+        "Machine Learning",
+        "Deep Learning",
+        "Life Sciences",
+        "Genomics",
+        "Transcriptomics",
         "Computational Biology",
-        "NGS Analysis",
-        "RNA-seq Analysis"
+        "Multi-omics",
+        "Healthcare Analytics",
+        "Cloud Deployment",
+        "MLOps",
+        "TypeScript",
+        "Next.js",
+        "Web Application Development",
+        "Research Collaboration"
       ],
       "expertise": [
-        "Bioinformatics Platform Development",
-        "Entity SEO & Knowledge Graph Optimization",
-        "Schema.org Structured Data",
-        "DevOps & Infrastructure Automation",
-        "MLOps & Machine Learning Pipelines",
-        "Genomics Data Analysis",
-        "Open-Source Software Maintainance"
+        "AI & Machine Learning Engineering",
+        "Computational Biology Research",
+        "Multi-omics Data Analysis",
+        "Healthcare Decision Support",
+        "Cloud-Based ML Deployment",
+        "End-to-End Application Development",
+        "Open-Source Innovation"
       ],
       "subjectOf": [
         {
@@ -678,10 +676,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#f8fafc" />
         <meta name="news_keywords" content="BioBuntu, bioinformatics, PyPI Package, data analysis, visualization, PCA, clustering, genomics, proteomics, updates, new releases, machine learning, life sciences, computational biology, NGS analysis, RNA sequencing, DNA analysis, metagenomics, biostatistics, biotechnology" />
         <meta name="category" content="Programming Languages, PyPI, Python, Bioinformatics, Education, Research Tools" />
         <meta name="audience" content="Bioinformaticians, Researchers, Data Scientists, Software Developers" />
@@ -728,7 +726,7 @@ export default function RootLayout({
         <meta name="web-app-capable" content="yes" />
         <meta name="x-ua-compatible" content="IE=edge,chrome=1" />
         <meta name="format-detection" content="telephone=yes,email=yes,address=no" />
-        <meta name="color-scheme" content="light dark" />
+        <meta name="color-scheme" content="light" />
         {/* Open Search / XML Sitemap */}
         <link rel="search" type="application/opensearchdescription+xml" title="BioBuntu Search" href="/opensearch.xml" />
         {/* Robots.txt / Crawler Hints */}
@@ -829,7 +827,9 @@ export default function RootLayout({
         {/* (site JSON-LD injected above) */}
       </head>
       <body className={`font-sans antialiased`}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

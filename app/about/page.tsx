@@ -5,22 +5,21 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About BioBuntu - Founded by Mubashir Ali | Open-Source Bioinformatics",
-  description: "Learn about BioBuntu's mission and Mubashir Ali, founder of BioBuntu and TynexAI. Expert in bioinformatics, Entity SEO, DevOps, MLOps, and genomic data analysis.",
+  title: "About BioBuntu - Founded by Mubashir Ali | AI & Life Sciences Researcher",
+  description: "Learn about Mubashir Ali, an innovative AI and machine learning engineer and researcher specializing in the intersection of artificial intelligence and life sciences.",
   keywords: [
     "Mubashir Ali",
-    "BioBuntu founder",
-    "bioinformatics platform",
-    "entity SEO",
-    "knowledge graph",
-    "DevOps expert",
-    "MLOps",
-    "Schema.org",
+    "AI researcher",
+    "machine learning engineer",
+    "life sciences AI",
+    "computational genomics",
+    "multi-omics",
+    "TynexAI",
     "Code with Bismillah"
   ],
   openGraph: {
-    title: "About BioBuntu - Entity-Driven Open-Source Bioinformatics",
-    description: "BioBuntu is a comprehensive bioinformatics platform founded by Mubashir Ali, combining expertise in genomics, data science, and enterprise software development.",
+    title: "About BioBuntu - AI-Driven Computational Biology Research",
+    description: "BioBuntu is shaped by Mubashir Ali's work at the intersection of AI, life sciences, and computational biology.",
     url: "https://biobuntu.github.io/about",
     type: "website",
   },
@@ -141,7 +140,7 @@ export default function About() {
                     <span className="text-6xl">👨‍💻</span>
                   </div>
                   <h3 className="text-2xl font-bold text-foreground">Mubashir Ali</h3>
-                  <p className="text-sm text-muted-foreground mt-2">Bioinformatician & Data Science Professional</p>
+                  <p className="text-sm text-muted-foreground mt-2">AI & Machine Learning Engineer & Researcher</p>
                 </div>
                 
                 <div className="space-y-3 mb-6">
@@ -192,24 +191,31 @@ export default function About() {
                 <div>
                   <h4 className="text-xl font-bold text-foreground mb-3">Entity Profile</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    <strong>Mubashir Ali</strong> is a <strong>Bioinformatics & Data Science Professional</strong> who bridges the gap between complex biological data and actionable insights. As the <strong>founder of BioBuntu and TynexAI</strong>, he represents the convergence of three critical domains: computational biology, enterprise software architecture, and semantic web technologies.
+                    <strong>Mubashir Ali</strong> is an <strong>innovative AI and machine learning engineer and researcher</strong> specializing in the intersection of artificial intelligence and life sciences. His mission is to bridge the gap between complex biological data and actionable insights, driving innovation in genomics, transcriptomics, and computational biology.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="text-xl font-bold text-foreground mb-3">Professional Foundation</h4>
                   <p className="text-muted-foreground leading-relaxed">
-                    With deep expertise in genomics, machine learning, and AI, Mubashir combines theoretical research knowledge with practical DevOps and MLOps engineering. His work focuses on turning complex biological datasets into structured, queryable insights—both in the lab and in Google's Knowledge Graph.
+                    Throughout his career, he has focused on developing computational tools that accelerate discovery and improve decision making in healthcare. He possesses strong proficiency in deploying, hosting, and scaling sophisticated machine learning and deep learning models on modern cloud platforms, ensuring robust pipeline performance.
                   </p>
                 </div>
 
                 <div>
                   <h4 className="text-xl font-bold text-foreground mb-3">Why BioBuntu Exists</h4>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    BioBuntu was born from a simple observation: researchers spend more time managing data infrastructure than doing science. The platform abstracts away complexity while maintaining the power and flexibility that serious bioinformatics work demands.
+                    Beyond data science, Mubashir is a highly skilled software developer with expertise in TypeScript, Next.js, and modern web technologies. This dual capability allows him to build end-to-end applications, transforming theoretical algorithms into functional, user-friendly tools for researchers and clinicians.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Built with the same principles that power Knowledge Graph entity building—clarity, consistency, and structured identity—BioBuntu ensures that biological data is not just analyzed but understood at every level of the stack.
+                    He is passionate about pushing the boundaries of what technology can achieve in life sciences and leads both TynexAI and Code with Bismillah to advance AI services and education in the field.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-bold text-foreground mb-3">Research & Collaboration</h4>
+                  <p className="text-muted-foreground leading-relaxed">
+                    He is currently actively seeking collaborations with professors and research labs working at the forefront of AI/ML, multi-omics, and computational genomics.
                   </p>
                 </div>
 
